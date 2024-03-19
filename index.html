@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video with Interactive Transcript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <video id="my-video" class="video-js" controls preload="auto" fluid="true" data-setup="{}">
+      <source src="assets/video.mp4" type="video/mp4" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>
+    <p id="transcript">
+      <span id="1" data-start=".002" data-end="3.157">What's up, my name is Dustin, and I'm a developer here at Treehouse.</span>
+      <span id="2" data-start="3.157" data-end="7.822">Today, I wanna take you through using the JavaScript array method known as includes.</span>
+      <span id="3" data-start="7.822" data-end="12.212">As the name suggests, this method checks if an array includes a specific value</span>
+      <span id="4" data-start="12.212" data-end="14.808">and returns true or false respectively.</span>
+      <span id="5" data-start="14.808" data-end="17.339">Let's hop into some code and see how this works.</span>
+      <span id="6" data-start="17.339" data-end="19.412">Make sure to check out the description or teacher's notes </span>
+      <span id="7" data-start="19.412" data-end="21.658">down below for related resources.</span>
+      <span id="8" data-start="21.658" data-end="23.918">If you're ready, let's get into it.</span>
+      <span id="9" data-start="23.918" data-end="28.086">First, let's check out the official MDN documentation for this method.</span>
+      <span id="10" data-start="28.086" data-end="29.194">It's pretty straightforward.</span>
+      <span id="11" data-start="29.194" data-end="33.675">According to MDN, the includes method determines whether an array includes</span>
+      <span id="12" data-start="33.675" data-end="38.913">a certain value among its entries, returning true or false as appropriate.</span>
+      <span id="13" data-start="38.913" data-end="40.443">Sounds pretty simple.</span>
+      <span id="14" data-start="40.443" data-end="41.813">Let's practice it a bit.</span>
+      <span id="15" data-start="41.813" data-end="44.988">I'll open up my text editor with an empty app.js file,</span>
+      <span id="16" data-start="44.988" data-end="47.212">and I'll run this file with Node.</span>
+      <span id="17" data-start="47.212" data-end="50.412">If you're unfamiliar with Node or don't have it installed,</span>
+      <span id="18" data-start="50.412" data-end="53.557">you can run this code in your browser's developer console.</span>
+      <span id="19" data-start="53.557" data-end="57.67">Let's set up a brand new array, I'll call this names and we'll throw in some names.</span>
+      <span id="20" data-start="57.67" data-end="68.169">Let's write jamie, kandra, and taylor.</span>
+      <span id="21" data-start="68.169" data-end="71.314">Underneath our array, let's write a console.log method</span>
+      <span id="22" data-start="71.314" data-end="77.279">and inside of that we can write our names array and chain on our includes method.</span>
+      <span id="23" data-start="77.279" data-end="81.112">Inside of our includes method, let's write the string bob.</span>
+      <span id="24" data-start="81.112" data-end="85.165">If I hit save and open up our terminal and write node app.js,</span>
+      <span id="25" data-start="85.165" data-end="87.242">you'll see we get back false.</span>
+      <span id="26" data-start="87.242" data-end="90.5">And this is because bob does not appear in our array.</span>
+      <span id="27" data-start="90.5" data-end="92.825">Let's change bob with kandra.</span>
+      <span id="28" data-start="92.825" data-end="96.482">I'll hit save and run node app.js in my terminal again,</span>
+      <span id="29" data-start="96.482" data-end="98.867">and this time we get back true.</span>
+      <span id="30" data-start="98.867" data-end="101.59">This is because kandra appears in our array.</span>
+      <span id="31" data-start="101.59" data-end="105.598">This method is really straightforward but can also do some complex things.</span>
+      <span id="32" data-start="105.598" data-end="108.876">I'll link below a video where I use the includes method to create</span>
+      <span id="33" data-start="108.876" data-end="115.125">a dynamic search feature for a web app.</span>
+      <span id="34" data-start="115.125" data-end="118.326">And that about covers it for the includes JavaScript array method.</span>
+      <span id="35" data-start="118.326" data-end="120.806">I hope this guide helped and I'll see you in the next one.</span>
+      <span id="36" data-start="120.806" data-end="124.425">Until then, have fun and happy coding.</span>
+    </p>
+  </div>
+</body>
+</html>
