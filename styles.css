@@ -21,6 +21,12 @@ html, body {
   background: #fff;
   padding: 4px;
   margin: 2px;
+  transition: all .3s;
+}
+#transcript span:hover {
+  color: #000;
+  background-color: rgb(240 255 151);
+  cursor: pointer;
 }
 #transcript span.highlight {
   color: #000;
